@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tvij_coach</title>
+    <!-- Подключение шрифта Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    </head>
+    <body>
     <header>
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="Меню" />
-        </div>
-        <nav id="mobile-nav" class="mobile-nav">
-            <div class="close-menu" onclick="toggleMenu()">
-                <img src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="Закрыть" />
-            </div>
+        <nav>
             <ul>
-                <li><a href="#home" onclick="toggleMenu()">Головна</a></li>
-                <li><a href="#services" onclick="toggleMenu()">Послуги</a></li>
-                <li><a href="#about" onclick="toggleMenu()">Про себе</a></li>
-                <li><a href="#testimonials" onclick="toggleMenu()">Відгуки</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Записатися</a></li>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Про себе</a></li>
+                <li><a href="#testimonials">Відгуки</a></li>
+                <li><a href="#contact">Записатися</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Основной контент здесь -->
+    <!-- Главная секция -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Коучінг з Кариною</h1>
@@ -35,6 +31,7 @@
         </div>
     </section>
 
+    <!-- Секция "Услуги" -->
     <section id="services">
         <h2>Послуги</h2>
         <div class="service">
@@ -55,12 +52,14 @@
             <p>Вартість = 300$ / 12000 UAH</p>
         </div>
         <div class="service">
+            <h4>ЗНИЖКА 70%</h4>
             <h3>Індівідуальний коучінговий супровід</h3>
             <p>Перша сессія знайомства безокштовна</p>
-            <p>Вартість = 300$ / 12000 UAH</p>
+            <p>Вартість =  200$ / 1300 UAH 3̶0̶0̶$̶ / 2̶0̶0̶0̶ ̶U̶A̶H̶</p>
         </div>
     </section>
 
+    <!-- Секция "Обо мне" -->
     <section id="about">
         <h2>Про себе</h2>
         <div class="about-content">
@@ -72,6 +71,7 @@
         </div>
     </section>
 
+    <!-- Секция "Отзывы" -->
     <section id="testimonials">
         <h2>Відгуки</h2>
         <div class="testimonial">
@@ -88,31 +88,23 @@
         </div>
     </section>
 
+    <!-- Секция Контакти на украинском языке -->
     <section id="contact">
         <h2>Зв'яжіться з нами</h2>
         <p>Якщо ви бажаєте записатися на коучинг-сесію, натисніть кнопку нижче, щоб перейти до форми.</p>
+        <!-- Ссылка на Google Forms -->
         <a href="https://forms.gle/SU76KdjZD86YTcgj9" target="_blank">
         <button>Записатися на сесію</button>
         </a>
     </section>
 
     <footer>
-        <p>&copy; 2024 Коучінг з tvij_coach. Усі права захищені.</p>
+        <h9>сайт зроблен @kvadratsites</h9>
     </footer>
 
     <footer>
-        <p>зроблено @kvadratsites</p> <!-- Новый текст в футере -->
+        <p>&copy; 2024 Коучінг з tvij_coach. Усі права захищені.</p>
     </footer>
-
-    <script src="script.js"></script>
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById('mobile-nav');
-            nav.classList.toggle('active');
-        }
-    </script>
-</body>
-</html>
 
     <script src="script.js"></script>
 </body>
