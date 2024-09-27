@@ -1,0 +1,253 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('https://i.pinimg.com/originals/be/fa/24/befa248ddf9349703400310082e18c02.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Стили для хедера */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Стили для главной секции */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e6b800;
+    transform: translateY(-5px);
+}
+
+/* Стили для секции "Услуги" */
+#services {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для секции "Обо мне" */
+#about {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#about h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+/* Стили для секции "Отзывы" */
+#testimonials {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для секции "Контакты" */
+#contact {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+#contact a button {
+    padding: 15px 30px;
+    background-color: #000000; /* Чёрная кнопка */
+    color: #ffcc00; /* Жёлтый текст */
+    border: 2px solid #ffcc00; /* Жёлтая рамка */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact a button:hover {
+    background-color: #333333; /* Тёмно-серый при наведении */
+    color: #ffffff; /* Белый текст при наведении */
+    transform: translateY(-5px);
+}
+
+/* Стили для футера */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+/* Анимация fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
