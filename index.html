@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tvij_coach</title>
-    <!-- Подключение шрифта Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="Меню" />
+        </div>
+        <nav id="mobile-nav" class="mobile-nav">
+            <div class="close-menu" onclick="toggleMenu()">
+                <img src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="Закрыть" />
+            </div>
             <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#about">Про себе</a></li>
-                <li><a href="#testimonials">Відгуки</a></li>
-                <li><a href="#contact">Записатися</a></li>
+                <li><a href="#home" onclick="toggleMenu()">Головна</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Послуги</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Про себе</a></li>
+                <li><a href="#testimonials" onclick="toggleMenu()">Відгуки</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Записатися</a></li>
             </ul>
         </nav>
-        <button class="menu-toggle" id="menu-toggle">
-            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="Меню">
-        </button>
     </header>
 
-    <!-- Мобильное меню -->
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="close-menu" id="close-menu">
-            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="Закрыть">
-        </button>
-        <nav>
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#about">Про себе</a></li>
-                <li><a href="#testimonials">Відгуки</a></li>
-                <li><a href="#contact">Записатися</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Главная секция -->
+    <!-- Основной контент здесь -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Коучінг з Кариною</h1>
@@ -49,7 +35,6 @@
         </div>
     </section>
 
-    <!-- Секция "Услуги" -->
     <section id="services">
         <h2>Послуги</h2>
         <div class="service">
@@ -60,23 +45,22 @@
         <div class="service">
             <h3>5 сессій</h3>
             <p>5 сессій по 60 хвилин</p>
-            <p>Перша сессія знайомства безкоштовна</p>
+            <p>Перша сессія знайомства безокштовна</p>
             <p>Вартість = 200$ / 8000 UAH</p>
         </div>
         <div class="service">
             <h3>8 сессій</h3>
             <p>8 сессій по 60 хвилин</p>
-            <p>Перша сессія знайомства безкоштовна</p>
+            <p>Перша сессія знайомства безокштовна</p>
             <p>Вартість = 300$ / 12000 UAH</p>
         </div>
         <div class="service">
             <h3>Індівідуальний коучінговий супровід</h3>
-            <p>Перша сессія знайомства безкоштовна</p>
+            <p>Перша сессія знайомства безокштовна</p>
             <p>Вартість = 300$ / 12000 UAH</p>
         </div>
     </section>
 
-    <!-- Секция "Обо мне" -->
     <section id="about">
         <h2>Про себе</h2>
         <div class="about-content">
@@ -88,7 +72,6 @@
         </div>
     </section>
 
-    <!-- Секция "Отзывы" -->
     <section id="testimonials">
         <h2>Відгуки</h2>
         <div class="testimonial">
@@ -105,22 +88,27 @@
         </div>
     </section>
 
-    <!-- Секция Контакти на украинском языке -->
     <section id="contact">
         <h2>Зв'яжіться з нами</h2>
         <p>Якщо ви бажаєте записатися на коучинг-сесію, натисніть кнопку нижче, щоб перейти до форми.</p>
         <a href="https://forms.gle/SU76KdjZD86YTcgj9" target="_blank">
-            <button>Записатися на сесію</button>
+        <button>Записатися на сесію</button>
         </a>
     </section>
 
     <footer>
-        <h9>сайт зроблен @kvadratsites</h9>
-    </footer>
-
-    <footer>
         <p>&copy; 2024 Коучінг з tvij_coach. Усі права захищені.</p>
     </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mobile-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
 
     <script src="script.js"></script>
 </body>
