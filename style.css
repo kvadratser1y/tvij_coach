@@ -194,7 +194,7 @@ nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Стили для секции "Контакты" */
+/* Стили для секции "Контакти" */
 #contact {
     padding: 80px 20px;
     background: rgba(0, 0, 0, 0.8);
@@ -214,17 +214,17 @@ nav ul li a:hover {
 
 #contact a button {
     padding: 15px 30px;
-    background-color: #000000; /* Чёрная кнопка */
-    color: #ffcc00; /* Жёлтый текст */
-    border: 2px solid #ffcc00; /* Жёлтая рамка */
+    background-color: #000000;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 #contact a button:hover {
-    background-color: #333333; /* Тёмно-серый при наведении */
-    color: #ffffff; /* Белый текст при наведении */
+    background-color: #333333;
+    color: #ffffff;
     transform: translateY(-5px);
 }
 
@@ -249,5 +249,62 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    /* Размеры для мобильных устройств */
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-content img {
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+
+    #testimonials .testimonial {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+    }
+
+    #contact p {
+        font-size: 1em;
     }
 }
