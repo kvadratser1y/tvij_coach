@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,6 @@
     <!-- Подключение шрифта Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <
 </head>
 <body>
     <header>
@@ -20,7 +19,26 @@
                 <li><a href="#contact">Записатися</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" id="menu-toggle">
+            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="Меню">
+        </button>
     </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-menu" id="close-menu">
+            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="Закрыть">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Про себе</a></li>
+                <li><a href="#testimonials">Відгуки</a></li>
+                <li><a href="#contact">Записатися</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Главная секция -->
     <section id="home" class="hero">
@@ -42,18 +60,18 @@
         <div class="service">
             <h3>5 сессій</h3>
             <p>5 сессій по 60 хвилин</p>
-            <p>Перша сессія знайомства безокштовна</p>
+            <p>Перша сессія знайомства безкоштовна</p>
             <p>Вартість = 200$ / 8000 UAH</p>
         </div>
         <div class="service">
             <h3>8 сессій</h3>
             <p>8 сессій по 60 хвилин</p>
-            <p>Перша сессія знайомства безокштовна</p>
+            <p>Перша сессія знайомства безкоштовна</p>
             <p>Вартість = 300$ / 12000 UAH</p>
         </div>
         <div class="service">
             <h3>Індівідуальний коучінговий супровід</h3>
-            <p>Перша сессія знайомства безокштовна</p>
+            <p>Перша сессія знайомства безкоштовна</p>
             <p>Вартість = 300$ / 12000 UAH</p>
         </div>
     </section>
@@ -91,9 +109,8 @@
     <section id="contact">
         <h2>Зв'яжіться з нами</h2>
         <p>Якщо ви бажаєте записатися на коучинг-сесію, натисніть кнопку нижче, щоб перейти до форми.</p>
-        <!-- Ссылка на Google Forms -->
         <a href="https://forms.gle/SU76KdjZD86YTcgj9" target="_blank">
-        <button>Записатися на сесію</button>
+            <button>Записатися на сесію</button>
         </a>
     </section>
 
